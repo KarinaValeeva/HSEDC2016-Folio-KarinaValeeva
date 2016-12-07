@@ -12,6 +12,11 @@ body.landing * {
   transition: all .3s ease;
 }
 
+/*body.landing .menubar div {
+  max-width: 1440px;
+  margin: 0 auto;
+}*/
+
 .compact {
   display: none;
 }
@@ -40,10 +45,10 @@ body.landing * {
   overflow: hidden;
 }
 
-.ground {
+/*.ground {
   width: 100%;
   background-color: rgb(122, 139, 139);
-}
+}*/
 
 .mainSection h2 {
   font-family: 'PT Sans Caption', sans-serif;
@@ -294,25 +299,50 @@ body.landing * {
   }
 
   #mockup1 {
-    top: 85px;
-    right: 0;
-    width: 521px;
-    height: 470px;
+    top: 233px;
+    right: 160px;
+    width: 530px;
+    height: 570px;
+    background-image: url(../images/about.png);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+    /*opacity: 0.4;*/
   }
 
-  #mockup2 {
-    top: 70px;
-    left: 148px;
-    width: 380px;
-    height: 478px;
+  #mockup2_1 {
+    top: 193px;
+    left: 160px;
+    width: 140px;
+    height: 317px;
+    background-image: url(../images/about.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_2 {
+    top: 193px;
+    left: 333px;
+    width: 140px;
+    height: 395px;
+    background-image: url(../images/works.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_3 {
+    top: 193px;
+    left: 506px;
+    width: 140px;
+    height: 474px;
+    background-image: url(../images/work.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup3 {
-    top: 72px;
-    right: -444px;
-    width: 960px;
-    height: 555px;
+    width: 765px;
+    height: 406px;
+    top: 340px;
+    right: 40px;
+    background-image: url(../images/screens.png);
   }
+
 
 }
 
@@ -329,13 +359,29 @@ body.landing * {
     display: block;
   }
 
+  .menubar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+  }
+
+  .logo {
+    display: block;
+    width: 60px;
+    height: 18px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+  }
+
+
   .mainSection {
     width: 840px;
-    height: 1024px;
+    height: 610px;
   }
   .mainSection h2 {
     font-size: 28px;
-    line-height: 32px;
+    line-height: 38px;
   }
 
   .mainSection p {
@@ -346,7 +392,7 @@ body.landing * {
 
   .mainSection.center h2 {
     font-size: 28px;
-    line-height: 37px;
+    line-height: 40px;
   }
 
   .mainSection.center p {
@@ -354,16 +400,17 @@ body.landing * {
   }
 
   .mainSection section {
-    top: 143px;
+    top: 138px;
     width: 410px;
   }
 
   .mainSection.left section {
-    left: 20px;
+    left: 21px;
   }
 
   .mainSection.right section {
-    right: 190px;
+    margin-top: -42px;
+    right: -46px;
   }
 
   .mainSection.center section {
@@ -371,13 +418,13 @@ body.landing * {
   }
 
   .mainSection section figure {
-    width: 147px;
-    height: 14px;
-    margin-top: 100px;
+    width: 22px;
+    height: 3px;
+    margin-top: 39px;
   }
 
   .mainSection.left section figure {
-    margin-left: -40px;
+    margin-left: 0;
   }
 
   .mainSection.right section figure {
@@ -391,6 +438,53 @@ body.landing * {
   .mainSection.center section nav a {
     margin: 0 6px;
   }
+
+  #mockup1 {
+    top: 165px;
+    right: 21px;
+    width: 379px;
+    height: 405px;
+    background-image: url(../images/about.png);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+    opacity: 0.4;
+  }
+
+  #mockup2_1 {
+    top: 193px;
+    left: 160px;
+    width: 102px;
+    height: 228px;
+    background-image: url(../images/about.png);
+    opacity: 20%;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_2 {
+    top: 193px;
+    left: 333px;
+    width: 102px;
+    height: 238px;
+    background-image: url(../images/works.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_3 {
+    top: 193px;
+    left: 506px;
+    width: 102px;
+    height: 340px;
+    background-image: url(../images/work.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup3 {
+    width: 765px;
+    height: 406px;
+    top: 340px;
+    right: 40px;
+    background-image: url(../images/screens.png);
+  }
+}
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
