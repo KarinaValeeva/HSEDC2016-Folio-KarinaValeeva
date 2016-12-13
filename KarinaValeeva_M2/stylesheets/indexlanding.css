@@ -1,7 +1,3 @@
-.polosa {
-  background-color: #77ffe1;
-}
-
 body.landing.bg {
   background-image: url(../images/mockups/1440.png);
   background-repeat: no-repeat;
@@ -12,17 +8,8 @@ body.landing * {
   transition: all .3s ease;
 }
 
-/*body.landing .menubar div {
-  max-width: 1440px;
-  margin: 0 auto;
-}*/
-
 .compact {
   display: none;
-}
-
-.polosa {
-  background-color: #77ffe1;
 }
 
 .landingWrapper {
@@ -31,11 +18,12 @@ body.landing * {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+  /*min-width: 768px;*/
   margin: 0 auto;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
-  /*background-color: #FAFAFA;*/
+  background-color: #FAFAFA;
 }
 
 .mainSection {
@@ -45,10 +33,11 @@ body.landing * {
   overflow: hidden;
 }
 
-/*.ground {
-  width: 100%;
-  background-color: rgb(122, 139, 139);
-}*/
+.mainSection section {
+  position: absolute;
+  top: 191px;
+  width: 580px;
+}
 
 .mainSection h2 {
   font-family: 'PT Sans Caption', sans-serif;
@@ -58,14 +47,40 @@ body.landing * {
 }
 
 .mainSection p {
-  margin-top: 27px;
   font-family: 'PT Sans', sans-serif;
+  margin-top: 26px;
   font-size: 21px;
   line-height: 36px;
 }
 
+.mainSection.left section {
+  left: 159px;
+}
+
+.mainSection.right section {
+  right: 61px;
+}
+
+.mainSection section figure {
+  width: 32px;
+  height: 4px;
+  margin-top: 58px;
+  background-color: #77FFE1;
+}
+
+.mainSection.right,
+.mainSection.center{
+  color: white;
+  background-color: rgb(135, 150, 150);
+}
+
 .mainSection.center {
   text-align: center;
+}
+
+.mainSection.center section {
+  top: 190px;
+  width: 100%;
 }
 
 .mainSection.center h2 {
@@ -74,106 +89,35 @@ body.landing * {
 }
 
 .mainSection.center p {
-  margin-top: 26px;
-}
-
-.mainSection.center section {
-  top: 190px;
-  width: 100%;
-}
-
-.mainSection section {
-  position: absolute;
-  top: 189px;
-  width: 580px;
-}
-
-.mainSection.left section {
-  left: 160px;
-}
-
-.mainSection.right section {
-  right: 60px;
-}
-
-.mainSection.right section p,
-.mainSection.right section h2,
-.mainSection.center section p,
-.mainSection.center section h2 {
-  color: white;
-}
-
-.mainSection section figure {
-  width: 30px;
-  height: 4px;
-  margin-top: 59px;
-}
-
-/*.mainSection.left section figure {
-  margin-left: -5px;
-}*/
-
-.mainSection.right section figure {
-  margin-left: -1px;
-}
-
-.mainSection.center section nav {
-  margin-top: 60px;
-  font-size: 0;
+  margin-top: 27px;
 }
 
 .knopka {
-  margin-left: 560px;
+  margin-left: 559px;
+  margin-top: 58px;
+  font-size: 0;
 }
 .mainSection.center section nav a {
-  margin: 0 10px;
+  margin: 3px 10px;
 }
 
 .mainSection.center footer {
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
   right: 0;
   width: 100%;
-  padding-bottom: 62px;
+  padding-bottom: 30px;
 }
 
 .mainSection.center footer p {
   font-size: 16px;
-  color: white;
+  margin-bottom: 7px;
 }
 
 .mockup {
   position: absolute;
   background-size: cover;
 }
-
-/*.container {
-	align-items: flex-end;
-	display: flex;
-	justify-content: center;
-}*/
-
-
-/*.Media {
-  margin: 47px auto;
-  right: 300px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.Media-figure {
-  width: 140px;
-  margin-right: 33px;
-
-}
-
-.Media-body {
-  position: relative;
-  left: 122px;
-  margin-top: -50px;
-   flex: 0 0 auto;
-
-}*/
 
 
 #mockup1 {
@@ -183,7 +127,6 @@ body.landing * {
   height: 570px;
   background-image: url(../images/about.png);
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
-  /*opacity: 0.4;*/
 }
 
 #mockup2_1 {
@@ -227,128 +170,13 @@ body.landing * {
   }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1179px) {
   body.landing.bg {
-    background-image: url(../images/mockups/1180FB.png);
+    background-image: url(../images/mockups/1024.png);
   }
 
   .landingWrapper {
     width: 100%;
-  }
-  .mainSection {
-    width: 1180px;
-    height: 568px;
-  }
-  .mainSection h2 {
-    font-size: 26px;
-    line-height: 32px;
-  }
-
-  .mainSection p {
-    margin-top: 18px;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  .mainSection.center h2 {
-    font-size: 28px;
-    line-height: 37px;
-  }
-
-  .mainSection.center p {
-    margin-top: 21px;
-  }
-
-  .mainSection section {
-    top: 105px;
-    width: 410px;
-  }
-
-  .mainSection.left section {
-    left: 190px;
-  }
-
-  .mainSection.right section {
-    right: 190px;
-  }
-
-  .mainSection.center section {
-    top: 132px;
-  }
-
-  .mainSection section figure {
-    width: 147px;
-    height: 14px;
-    margin-top: 100px;
-  }
-
-  .mainSection.left section figure {
-    margin-left: -40px;
-  }
-
-  .mainSection.right section figure {
-    margin-left: 303px;
-  }
-
-  .mainSection.center section nav {
-    margin-top: 50px;
-  }
-
-  .mainSection.center section nav a {
-    margin: 0 6px;
-  }
-
-  #mockup1 {
-    top: 233px;
-    right: 160px;
-    width: 530px;
-    height: 570px;
-    background-image: url(../images/about.png);
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
-    /*opacity: 0.4;*/
-  }
-
-  #mockup2_1 {
-    top: 193px;
-    left: 160px;
-    width: 140px;
-    height: 317px;
-    background-image: url(../images/about.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
-  }
-
-  #mockup2_2 {
-    top: 193px;
-    left: 333px;
-    width: 140px;
-    height: 395px;
-    background-image: url(../images/works.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
-  }
-
-  #mockup2_3 {
-    top: 193px;
-    left: 506px;
-    width: 140px;
-    height: 474px;
-    background-image: url(../images/work.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
-  }
-
-  #mockup3 {
-    width: 765px;
-    height: 406px;
-    top: 340px;
-    right: 40px;
-    background-image: url(../images/screens.png);
-  }
-
-
-}
-
-@media screen and (max-width: 840px) {
-  body.landing.bg {
-    background-image: url(../images/mockups/840SB.png);
   }
 
   .full {
@@ -359,44 +187,128 @@ body.landing * {
     display: block;
   }
 
-  .menubar div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 42px;
-  }
-
-  .logo {
-    display: block;
-    width: 60px;
-    height: 18px;
-    background-image: url(../images/logo.svg);
-    background-repeat: no-repeat;
-  }
-
-
   .mainSection {
-    width: 840px;
-    height: 610px;
+    width: 1179px;
+    height: 568px;
   }
   .mainSection h2 {
-    font-size: 28px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .mainSection p {
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .mainSection section {
+    top: 136px;
+    width: 410px;
+  }
+
+  .mainSection.left section {
+    left: 191px;
+  }
+
+  .mainSection.right section {
+    right: 124px;
+  }
+
+  .mainSection section figure {
+    width: 23px;
+    height: 3px;
+    margin-top: 42px;
+  }
+
+  .mainSection.center section {
+    top: 139px;
+  }
+
+  .mainSection.center h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .mainSection.center p {
+    margin-top: 18px;
+  }
+
+  .knopka {
+    margin-left: 472px;
+    margin-top: 43px;
+    font-size: 0;
+  }
+
+  .mainSection.center section nav a {
+    margin: -2px 10px;
+  }
+
+  .mainSection.center footer {
+    padding-bottom: 20px;
+  }
+
+  .mainSection.center footer p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  #mockup1 {
+    top: 166px;
+    right: 192px;
+    width: 376px;
+    height: 405px;
+  }
+
+  #mockup2_1 {
+    top: 138px;
+    left: 190px;
+    width: 100px;
+    height: 227px;
+  }
+
+  #mockup2_2 {
+    top: 138px;
+    left: 315px;
+    width: 100px;
+    height: 283px;
+  }
+
+  #mockup2_3 {
+    top: 138px;
+    left: 436px;
+    width: 100px;
+    height: 339px;
+  }
+
+  #mockup3 {
+    width: 540px;
+    height: 288px;
+    top: 242px;
+    right: 109px;
+  }
+
+
+}
+
+@media screen and (max-width: 839px) {
+  body.landing.bg {
+    background-image: url(../images/mockups/768.png);
+  }
+
+  .mainSection {
+    width: 839px;
+    height: 1024px;
+  }
+  .mainSection h2 {
+    font-size: 30px;
     line-height: 38px;
   }
 
   .mainSection p {
-    margin-top: 18px;
+    margin-top: 19px;
     font-size: 16px;
-    line-height: 27px;
-  }
-
-  .mainSection.center h2 {
-    font-size: 28px;
-    line-height: 40px;
-  }
-
-  .mainSection.center p {
-    margin-top: 21px;
+    line-height: 26px;
   }
 
   .mainSection section {
@@ -405,90 +317,76 @@ body.landing * {
   }
 
   .mainSection.left section {
-    left: 21px;
+    left: 141px;
   }
 
   .mainSection.right section {
-    margin-top: -42px;
-    right: -46px;
+    right: 90px;
   }
 
   .mainSection.center section {
-    top: 132px;
-  }
-
-  .mainSection section figure {
-    width: 22px;
-    height: 3px;
-    margin-top: 39px;
-  }
-
-  .mainSection.left section figure {
-    margin-left: 0;
-  }
-
-  .mainSection.right section figure {
-    margin-left: 303px;
-  }
-
-  .mainSection.center section nav {
     margin-top: 50px;
+    width: 100%;
   }
 
+  .mainSection.center p {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+
+  .knopka {
+    margin-left: 284px;
+    margin-top: 93px;
+    font-size: 0;
+  }
   .mainSection.center section nav a {
-    margin: 0 6px;
+    margin: -2px 28px;
+  }
+  .mainSection.center footer {
+    right: 3px;
   }
 
   #mockup1 {
-    top: 165px;
-    right: 21px;
-    width: 379px;
-    height: 405px;
-    background-image: url(../images/about.png);
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
-    opacity: 0.4;
+    top: 482px;
+    right: 157px;
+    width: 540px;
+    height: 544px;
   }
 
   #mockup2_1 {
-    top: 193px;
-    left: 160px;
-    width: 102px;
-    height: 228px;
-    background-image: url(../images/about.png);
-    opacity: 20%;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+    top: 456px;
+    left: 167px;
+    width: 140px;
+    height: 317px;
   }
 
   #mockup2_2 {
-    top: 193px;
-    left: 333px;
-    width: 102px;
-    height: 238px;
-    background-image: url(../images/works.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+    top: 456px;
+    left: 340px;
+    width: 140px;
+    height: 396px;
   }
 
   #mockup2_3 {
-    top: 193px;
-    left: 506px;
-    width: 102px;
-    height: 340px;
-    background-image: url(../images/work.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+    top: 456px;
+    left: 513px;
+    width: 140px;
+    height: 475px;
   }
 
   #mockup3 {
-    width: 765px;
-    height: 406px;
-    top: 340px;
-    right: 40px;
-    background-image: url(../images/screens.png);
+    width: 647px;
+    height: 404px;
+    top: 505px;
+    right: 42px;
   }
 }
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  #mockup1 {background-image: url(../images/landing/landing-mockup-1@2x.jpg);}
-  #mockup2 {background-image: url(../images/landing/landing-mockup-2@2x.jpg);}
-  #mockup3 {background-image: url(../images/landing/landing-mockup-3@2x.jpg);}
+  #mockup1 {background-image: url(../images/about@2x.png);}
+  #mockup2_1 {background-image: url(../images/about@2x.png);}
+  #mockup2_2 {background-image: url(../images/works@2x.png);}
+  #mockup2_3 {background-image: url(../images/work@2x.png);}
+  #mockup2_3 {background-image: url(../images/screens@2x.png);}
 }

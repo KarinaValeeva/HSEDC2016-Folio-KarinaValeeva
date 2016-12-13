@@ -1,8 +1,8 @@
 .menubar {
   width: 100%;
-  /*max-width: 1440px;*/
+  /*max-width: 1440px;
   margin: 0 auto;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);*/
 }
 
 .menubar div {
@@ -11,6 +11,9 @@
   align-items: center;
   height: 60px;
   /*padding: 20px;*/
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
 
 }
 
@@ -20,4 +23,29 @@
   height: 25px;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 1179px) {
+
+  .menubar div {
+    height: 44px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 18px;
+  }
+
+}
+
+@media screen and (max-width: 839px) {
+  .menubar div {
+    height: 42px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 18px;
+  }
 }
