@@ -1,6 +1,9 @@
-.blue {
+.btn {
   display: block;
   border-style: solid;
+}
+
+.blue {
   text-align: center;
   width: 300px;
   height: 50px;
@@ -14,8 +17,9 @@
 }
 
 
-.small {
-  line-height: 40px;
+.line {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 46px;
   font-size: 16px;
   text-decoration: underline;
   color: white;
@@ -23,8 +27,9 @@
 
 
 @media screen and (max-width: 1179px) {
-  .small {
+  .line {
     font-size: 13px;
+    line-height: 34px;
   }
 
   .blue {

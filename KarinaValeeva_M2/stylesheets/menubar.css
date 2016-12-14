@@ -1,8 +1,10 @@
 .menubar {
   width: 100%;
-  /*max-width: 1440px;
-  margin: 0 auto;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);*/
+  min-width: 768px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .menubar div {
@@ -10,9 +12,9 @@
   justify-content: center;
   align-items: center;
   height: 60px;
-  /*padding: 20px;*/
   max-width: 1440px;
   margin: 0 auto;
+  background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
 
 }
@@ -37,15 +39,4 @@
     height: 18px;
   }
 
-}
-
-@media screen and (max-width: 839px) {
-  .menubar div {
-    height: 42px;
-  }
-
-  .logo {
-    width: 60px;
-    height: 18px;
-  }
 }
