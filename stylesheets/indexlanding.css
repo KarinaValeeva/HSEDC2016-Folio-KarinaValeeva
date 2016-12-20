@@ -1,8 +1,9 @@
-/*body.landing.bg {
+body.landing.bg {
   background-image: url(../images/mockups/1440.png);
   background-repeat: no-repeat;
   background-position: top center;
-}*/
+}
+
 * {
   box-sizing: border-box;
 }
@@ -306,8 +307,6 @@ a {
     top: 242px;
     right: 109px;
   }
-
-
 }
 
 @media screen and (max-width: 839px) {
