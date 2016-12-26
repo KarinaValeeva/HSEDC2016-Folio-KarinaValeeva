@@ -148,7 +148,6 @@ a {
   background-size: cover;
 }
 
-
 #mockup1 {
   top: 233px;
   right: 160px;
@@ -352,8 +351,8 @@ a {
   }
 
   .buttons {
-   margin: 92px 0 0 -18px;
- }
+    margin: 92px 0 0 -18px;
+  }
 
   .mainSection.center footer {
     right: 3px;
